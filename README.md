@@ -1,6 +1,6 @@
 # How to develop a Python package
 
-A reliable file structure and development workflow.
+A reliable file structure and workflow for purposes of Python package development.
 
 ## File structure
 
