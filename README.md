@@ -53,5 +53,5 @@ Inside another (client) project/venv, you can install this package in any of the
 
     pip install dist/mypak-0.0.1-py3-none-any.whl
     pip install dist/mypak-0.0.1.tar.gz
-    pip install <project-folder>
+    pip install <package-project-folder>
     pip install https://github.com/zencd/python-package-example/archive/master.zip
