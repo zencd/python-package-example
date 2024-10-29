@@ -1,5 +1,6 @@
 *.egg-info
 /.idea
+/.venv
 /build
 /dist
 /venv

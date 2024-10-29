@@ -24,6 +24,10 @@ Iteratively:
 - change anything in `src/mypak/**.py`
 - run tests: `test.sh`
 
+A new dependency added:
+- run `prepare-dev.sh` again
+- PyCharm will suggest appropriate action proactively
+
 ## What you get
 
 - Smooth development process;
