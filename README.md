@@ -18,14 +18,14 @@ A reliable file structure and workflow for purposes of Python 3 package developm
 
 Once:
 - create and activate a venv
-- exec `prepare-dev.sh`
+- run `prepare-dev.sh`
 
 Iteratively:
-- change anything in `src/mypak/**.py`
+- change anything in `src/mypak/*.py`
 - run tests: `test.sh`
 
-A new dependency added:
-- run `prepare-dev.sh` again
+A new dependency added into `setup.py`:
+- rerun `prepare-dev.sh`
 - PyCharm will suggest appropriate action proactively
 
 ## What you get
@@ -40,10 +40,12 @@ A new dependency added:
 - changes in your package are automatically visible in tests;
 - no need in relative imports;
 - import your package by its absolute name, just like clients will do;
-- no extra `__init__.py` needed;
+- no excessive `__init__.py` needed;
 - tests won't appear in release artifacts;
 - all requirements are defined in a single place: `setup.py`;
-- PyCharm CE successfully auto-detects any changes there.
+- PyCharm CE successfully auto-detects any changes there;
+- `build.sh` produces release artifacts;
+- no deprecated things used.
 
 ## Build
 
