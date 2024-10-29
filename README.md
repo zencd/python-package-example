@@ -21,7 +21,7 @@ Once:
 - exec `prepare-dev.sh`
 
 Iteratively:
-- change anything in `src/mypak/*`
+- change anything in `src/mypak/**.py`
 - run tests: `test.sh`
 
 ## What you get
@@ -43,19 +43,18 @@ Iteratively:
 
 ## Build
 
-    ./build.sh
-
-Now expect artifacts like `dist/mypak-0.0.1-py3-none-any.whl`
+Run `./build.sh`. Now expect artifacts like `dist/mypak-0.0.1-py3-none-any.whl`
 and `dist/mypak-0.0.1.tar.gz` to appear.
 
 ## Install
 
-Inside another (client) project/venv, you can install your package in any of the following ways, but `whl` is faster:
+Inside another project/venv, you can install your package in any of the following ways, but `whl` and PyPi are faster:
 
 ```bash
+(venv)
 pip install dist/mypak-0.0.1-py3-none-any.whl
 pip install dist/mypak-0.0.1.tar.gz
-pip install /xxx/python-package-example  # from a folder
+pip install /path/to/python-package-example
 pip install https://github.com/zencd/python-package-example/archive/master.zip
 pip install mypack  # from PyPi, if you uploaded it
 python -c 'import mypak'  # verify
