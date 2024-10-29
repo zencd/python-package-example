@@ -1,2 +1,2 @@
 set -x
-twine upload dist/*
+twine upload dist/mypak-*.whl

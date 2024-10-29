@@ -9,4 +9,4 @@ python -m build
 pip wheel . -w dist --no-deps
 
 # verify the artifacts
-twine check dist/*
+twine check dist/mypak-*.tar.gz dist/mypak-*.whl
