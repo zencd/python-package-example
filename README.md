@@ -53,7 +53,7 @@ pytest test/
 
 ## Build
 
-Run. [./build.sh](build.sh).
+Run [build.sh](build.sh).
 Now expect artifacts like `dist/mypak-0.0.1-py3-none-any.whl`
 and `dist/mypak-0.0.1.tar.gz` to appear.
 
