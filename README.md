@@ -18,11 +18,11 @@ A reliable file structure and workflow for purposes of Python 3 package developm
 
 Once:
 - create and activate a venv
-- run `prepare-dev.sh`
+- run [prepare-dev.sh](prepare-dev.sh)
 
 Iteratively:
 - change anything in `src/mypak/*.py`
-- run tests: `test.sh`
+- run tests
 
 A new dependency added into `setup.py`:
 - rerun `prepare-dev.sh`
@@ -53,10 +53,7 @@ pytest test/
 
 ## Build
 
-```bash
-./build.sh
-```
-
+Run. [./build.sh](build.sh).
 Now expect artifacts like `dist/mypak-0.0.1-py3-none-any.whl`
 and `dist/mypak-0.0.1.tar.gz` to appear.
 
