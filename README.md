@@ -5,13 +5,13 @@ A reliable file structure and workflow for purposes of Python 3 package developm
 ## File structure
 
     project-root
-    ├── prepare-dev.sh
     ├── src
     │   └── mypak
     │       ├── __init__.py
     │       └── sub.py
     ├── test
     │   └── test_1.py
+    ├── prepare-dev.sh
     └── test.sh
 
 ## Development workflow
@@ -26,7 +26,6 @@ Iteratively:
 
 A new dependency added into `setup.py`:
 - rerun `prepare-dev.sh`
-- PyCharm will suggest appropriate action proactively
 
 ## What you get
 
