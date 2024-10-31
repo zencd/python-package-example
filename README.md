@@ -47,14 +47,28 @@ A new dependency added into `setup.py`:
 
 ## Test
 
-    pytest test/
+```bash
+pytest test/
+```
 
 ## Build
 
-    ./build.sh
+```bash
+./build.sh
+```
 
 Now expect artifacts like `dist/mypak-0.0.1-py3-none-any.whl`
 and `dist/mypak-0.0.1.tar.gz` to appear.
+
+## Publish
+
+```bash
+# publish to the test PyPi
+twine upload -r testpypi dist/mypak-0.0.1-py3-none-any.whl
+
+# publish to the prod PyPi, if you're brave enough
+twine upload dist/mypak-0.0.1-py3-none-any.whl
+```
 
 ## Install
 
@@ -66,6 +80,9 @@ pip install dist/mypak-0.0.1-py3-none-any.whl
 pip install dist/mypak-0.0.1.tar.gz
 pip install /path/to/python-package-example
 pip install https://github.com/zencd/python-package-example/archive/master.zip
-pip install mypack  # from PyPi, if you uploaded it
-python -c 'import mypak'  # verify
+pip install -i https://test.pypi.org/simple/ mypak  # from test PyPi, if you uploaded it
+pip install mypak  # from prod PyPi, if you uploaded it
+
+# verify
+python -c 'import mypak; print(mypak.funk())'
 ```
