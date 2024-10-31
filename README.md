@@ -12,6 +12,7 @@ A reliable file structure and workflow for purposes of Python 3 package developm
     ├── test
     │   └── test_1.py
     ├── prepare-dev.sh
+    ├── setup.py
     └── test.sh
 
 ## Development workflow
@@ -47,9 +48,7 @@ A new dependency added into `setup.py`:
 
 ## Test
 
-```bash
-pytest test/
-```
+`pytest test/`
 
 ## Build
 
