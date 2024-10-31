@@ -2,6 +2,10 @@
 
 A reliable file structure and workflow for purposes of Python 3 package development.
 
+## Status
+
+Works well with Python 3.9 and 3.13, with or without PyCharm CE 2024.
+
 ## File structure
 
     project-root
