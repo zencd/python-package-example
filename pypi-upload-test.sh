@@ -3,4 +3,5 @@
 cd -- "$(dirname -- "$(readlink -f -- "$0")")" || exit 1
 
 set -x
+twine check dist/mypak-*.whl
 twine upload -r testpypi dist/mypak-*.whl

@@ -16,6 +16,7 @@ Works well with Python 3.9 and 3.13, with or without PyCharm CE 2024.
     ├── test
     │   └── test_1.py
     ├── prepare-dev.sh
+    ├── pyproject.toml
     ├── setup.py
     └── test.sh
 
@@ -29,7 +30,7 @@ Iteratively:
 - change anything in `src/mypak/*.py`
 - run tests
 
-A new dependency added into `setup.py`:
+A new dependency added:
 - rerun `prepare-dev.sh`
 
 ## What you get
@@ -46,7 +47,7 @@ A new dependency added into `setup.py`:
 - do `import mypak`, just like clients will do;
 - no excessive `__init__.py` needed;
 - tests won't appear in release artifacts;
-- all requirements are defined in a single place: `setup.py`;
+- all requirements are defined in a single place: `setup.py` or `pyproject.toml`;
 - PyCharm CE successfully auto-detects any changes there;
 - no deprecated things used, as of 2024.
 

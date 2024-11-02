@@ -1,0 +1,7 @@
+[project]
+name = "mypak"
+version = "0.0.2"
+dependencies = ['shortid>=0.1.2']
+
+[project.optional-dependencies]
+dev = ['pytest>=7.0', 'twine>=4.0.2']
