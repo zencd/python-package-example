@@ -15,10 +15,13 @@ Works well with Python 3.9 and 3.13, with or without PyCharm CE 2024.
     │       └── sub.py
     ├── test
     │   └── test_1.py
-    ├── prepare-dev.sh
-    ├── pyproject.toml
-    ├── setup.py
-    └── test.sh
+    ├── prepare-dev.sh                      ／l、
+    ├── pyproject.toml                     （˚､ ｡７
+    ├── setup.py                             l、ﾞ~ヽ
+    └── test.sh                              じしf_,)ノ
+
+Files `setup.py` and `pyproject.toml` are interchangeable.
+Keep one of them, delete another.
 
 ## Development workflow
 
@@ -65,9 +68,11 @@ and `dist/mypak-0.0.1.tar.gz` to appear.
 
 ```bash
 # publish to the test PyPi
+twine check dist/mypak-0.0.1-py3-none-any.whl
 twine upload -r testpypi dist/mypak-0.0.1-py3-none-any.whl
 
 # publish to the prod PyPi, if you're brave enough
+twine check dist/mypak-0.0.1-py3-none-any.whl
 twine upload dist/mypak-0.0.1-py3-none-any.whl
 ```
 
