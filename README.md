@@ -20,8 +20,8 @@ Works well with Python 3.9 and 3.13, with or without PyCharm CE 2024.
     ├── setup.py                             l、ﾞ~ヽ
     └── test.sh                              じしf_,)ノ
 
-Files `setup.py` and `pyproject.toml` are interchangeable.
-Keep one of them, delete another.
+Files `setup.py` and `pyproject.toml` both are describing the package.
+Keep one of them, remove another.
 
 ## Development workflow
 
