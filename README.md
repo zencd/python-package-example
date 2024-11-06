@@ -48,7 +48,6 @@ A new dependency added:
 - changes in your package are automatically visible in tests;
 - no need in relative imports, such as `import ..src.mypak`;
 - do `import mypak`, just like clients will do;
-- no excessive `__init__.py` needed;
 - tests won't appear in release artifacts;
 - all requirements are defined in a single place: `setup.py` or `pyproject.toml`;
 - PyCharm CE successfully auto-detects any changes there;
